@@ -200,9 +200,12 @@ async def gen_thumb(videoid: str):
         background = Image.blend(background, gradient_image, alpha=0.2)
         
         draw = ImageDraw.Draw(background)
-        arial = ImageFont.truetype("ShrutiMusic/assets/font2.ttf", 30)
-        font = ImageFont.truetype("ShrutiMusic/assets/font.ttf", 30)
-        title_font = ImageFont.truetype("ShrutiMusic/assets/font3.ttf", 45)
+        arial = ImageFont.truetype("AnanyaMusic/assets/font2.ttf", 30)
+        font = ImageFont.truetype("AnanyaMusic/assets/font.ttf", 30)
+        title_font = ImageFont.truetype("AnanyaMusic/assets/font3.ttf", 45)
+
+        text_size = draw.textsize("@ A n a n y a B o t s   ", font=font)
+        draw.text((1280 - text_size[0] - 10, 10), "@ A n a n y a B o t s   ", fill="black", font=font)
 
 
         circle_thumbnail = crop_center_circle(youtube, 400, 20, start_gradient_color)
@@ -252,7 +255,7 @@ async def gen_thumb(videoid: str):
         draw_text_with_shadow(background, draw, (text_x_position, 400), "00:00", arial, (255, 255, 255))
         draw_text_with_shadow(background, draw, (1080, 400), duration, arial, (255, 255, 255))
         
-        play_icons = Image.open("ShrutiMusic/assets/play_icons.png")
+        play_icons = Image.open("AnanyaMusic/assets/play_icons.png")
         play_icons = play_icons.resize((580, 62))
         background.paste(play_icons, (text_x_position, 450), play_icons)
 
