@@ -114,7 +114,7 @@ API_KEY = os.getenv("30DxNexGenBots4d6508", None) # youtube song api key, genera
 
 START_VIDEO_URL = os.getenv("START_VIDEO_URL", "https://files.catbox.moe/1tnq00.mp4")
 START_IMG_URL = os.getenv("START_IMG_URL", "https://files.catbox.moe/hee6pf.jpg")
-PING_IMG_URL = os.getenv("PING_IMG_URL", "https://files.catbox.moe/hee6pf.jpg")
+PING_IMG_URL = os.getenv("PING_IMG_URL", "https://files.catbox.moe/oih03i.jpg")
 PLAYLIST_IMG_URL = "https://files.catbox.moe/hee6pf.jpg"
 STATS_IMG_URL = "https://files.catbox.moe/hee6pf.jpg"
 TELEGRAM_AUDIO_URL = "https://files.catbox.moe/hee6pf.jpg"
